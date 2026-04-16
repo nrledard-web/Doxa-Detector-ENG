@@ -1,1 +1,7 @@
-
+streamlit
+pandas
+requests
+ddgs
+newspaper3k
+matplotlib
+lxml_html_clean
