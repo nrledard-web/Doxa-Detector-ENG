@@ -17,32 +17,32 @@ from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 # -----------------------------
 FRENCH_NEWS_DOMAINS = [
 
-# center / generalist
-"lemonde.fr",
-"francetvinfo.fr",
-"ouest-france.fr",
+    # center / generalist
+    "lemonde.fr",
+    "francetvinfo.fr",
+    "ouest-france.fr",
 
-# center-right
-"lefigaro.fr",
-"lesechos.fr",
+    # center-right
+    "lefigaro.fr",
+    "lesechos.fr",
 
-# left
-"liberation.fr",
-"nouvelobs.com",
+    # left
+    "liberation.fr",
+    "nouvelobs.com",
 
-# right
-"valeursactuelles.com",
+    # right
+    "valeursactuelles.com",
 
-# radical right / far right
-"fdesouche.com",
-"ripostelaique.com",
-"boulevardvoltaire.fr",
-"egaliteetreconciliation.fr",
-"reseauinternational.net",
+    # radical right / far right
+    "fdesouche.com",
+    "ripostelaique.com",
+    "boulevardvoltaire.fr",
+    "egaliteetreconciliation.fr",
+    "reseauinternational.net",
 
-# international
-"france24.com",
-"rfi.fr"
+    # international
+    "france24.com",
+    "rfi.fr"
 ]
 
 try:
@@ -93,9 +93,9 @@ T = {
     "scale_6_9": "doubtful",
     "scale_10_14": "plausible but needs cross-checking",
     "scale_15_20": "structurally robust",
-    "topic_section": "Analyze several articles by topic",
+    "topic_section": "Analyze multiple articles by topic",
     "topic": "Topic to analyze",
-    "topic_placeholder": "e.g.: artificial intelligence",
+    "topic_placeholder": "e.g. artificial intelligence",
     "analyze_topic": "📰 Analyze 10 articles on this topic",
     "searching": "Searching and analyzing articles...",
     "articles_analyzed": "articles analyzed.",
@@ -113,29 +113,29 @@ T = {
     "url": "Analyze an article by URL",
     "load_url": "🌐 Load article from URL",
     "article_loaded_from_url": "Article loaded from URL.",
-    "unable_to_retrieve_text": "Unable to retrieve the text from this URL.",
+    "unable_to_retrieve_text": "Unable to retrieve text from this URL.",
     "paste_url_first": "Paste a URL first.",
     "paste": "Paste an article or text here",
     "analyze": "🔍 Analyze article",
     "manual_paste": "manual copy-paste",
-    "loaded_url_source": "article loaded by URL",
+    "loaded_url_source": "article loaded from URL",
     "text_source": "Text source",
     "paste_text_or_load_url": "Paste a text or load a URL, then click “🔍 Analyze article”.",
     "classic_score": "Classic score",
     "improved_score": "Improved score",
     "hard_fact_score": "Hard Fact Score",
     "help_classic_score": "M = (G + N) − D",
-    "help_improved_score": "Adds V and R penalty",
-    "help_hard_fact_score": "Stricter control of claims and sources",
+    "help_improved_score": "Adds V and penalty R",
+    "help_hard_fact_score": "Stricter checking of claims and sources",
     "credibility_gauge": "Credibility gauge",
     "fragile": "Fragile",
-    "fragile_message": "The text shows strong structural or factual fragilities.",
+    "fragile_message": "The text shows strong structural or factual weaknesses.",
     "doubtful": "Doubtful",
     "doubtful_message": "The text contains some credible elements, but remains highly uncertain.",
     "plausible": "Plausible",
-    "plausible_message": "The text seems broadly plausible, but still requires verification.",
+    "plausible_message": "The text seems broadly plausible, but still needs verification.",
     "robust": "Robust",
-    "robust_message": "The text shows a fairly solid structural and factual basis.",
+    "robust_message": "The text has a fairly solid structural and factual foundation.",
     "score": "Score",
     "verdict": "Verdict",
     "summary": "Analysis summary",
@@ -144,16 +144,16 @@ T = {
     "weaknesses_detected": "Weaknesses detected",
     "no_major_weakness": "No major weakness detected by the heuristic.",
     "presence_of_source_markers": "Presence of source or data markers",
-    "verifiability_clues": "Verifiability clues detected: links, numbers, dates, or percentages",
-    "text_contains_nuances": "The text contains nuances, limits, or counterpoints",
+    "verifiability_clues": "Verifiability clues detected: links, figures, dates, or percentages",
+    "text_contains_nuances": "The text contains nuance, limitations, or counterpoints",
     "text_evokes_robust_sources": "The text refers to potentially robust or institutional sources",
     "some_claims_verifiable": "Some claims are grounded enough to be properly verified",
     "overly_assertive_language": "Overly assertive or absolutist language",
-    "notable_emotional_sensational_charge": "Notable emotional or sensationalist charge",
-    "almost_total_absence_of_verifiable_elements": "Near-total absence of verifiable elements",
+    "notable_emotional_sensational_charge": "Notable emotional or sensational charge",
+    "almost_total_absence_of_verifiable_elements": "Almost total absence of verifiable elements",
     "text_too_short": "Text too short to seriously support a strong claim",
-    "multiple_claims_very_fragile": "Several central claims are very fragile given the available clues",
-    "hard_fact_checking_by_claim": "Fact-checking by claim",
+    "multiple_claims_very_fragile": "Several central claims are very fragile given the available cues",
+    "hard_fact_checking_by_claim": "Claim-by-claim fact-checking",
     "claim": "Claim",
     "status": "Status",
     "verifiability": "Verifiability",
@@ -171,9 +171,9 @@ T = {
     "prudent_credibility": "Prudent credibility",
     "rather_credible": "Rather credible",
     "strong_credibility": "Strong credibility",
-    "paste_longer_text": "Paste a slightly longer text to obtain a finer claim mapping.",
+    "paste_longer_text": "Paste a slightly longer text to get a finer mapping of claims.",
     "llm_analysis": "Mécroyance analysis for systems",
-    "llm_intro": "This section applies the models derived from the treatise to evaluate the cognitive posture of a system.",
+    "llm_intro": "This section applies the models derived from the treatise to evaluate a system’s cognitive posture.",
     "overconfidence": "Overconfidence (asymmetry)",
     "calibration": "Relative calibration (ratio)",
     "revisability": "Revisability (R)",
@@ -182,16 +182,16 @@ T = {
     "llm_metrics": "Derived metrics",
     "zone_closure": "Cognitive closure zone: certainty exceeds cognitive grounding.",
     "zone_stability": "Revisable stability zone: mécroyance accompanies without dominating.",
-    "zone_lucidity": "Increasing lucidity zone: doubt structures cognition.",
-    "zone_rare": "Rare zone: highly integrated and reflexive cognition.",
-    "zone_pansapience": "Hypothetical pan-sapience: limit horizon of almost fully revisable cognition.",
-    "zone_asymptote": "Ideal asymptote: total knowledge and integration, without rigidification.",
+    "zone_lucidity": "Growing lucidity zone: doubt structures cognition.",
+    "zone_rare": "Rare zone: highly integrated and reflective cognition.",
+    "zone_pansapience": "Hypothetical pan-sapience: limiting horizon of an almost fully revisable cognition.",
+    "zone_asymptote": "Ideal asymptote: totality of knowledge and integration, without rigidification.",
     "out_of_spectrum": "Value outside the theoretical spectrum.",
     "external_corroboration_module": "🔎 External corroboration module",
-    "external_corroboration_caption": "This module searches for external sources likely to confirm, nuance, or contradict the central claims of the pasted text.",
+    "external_corroboration_caption": "This module searches for external sources that may confirm, nuance, or contradict the central claims of the pasted text.",
     "corroboration_in_progress": "Searching for corroboration...",
     "generated_query": "Generated query",
-    "no_strong_sources_found": "No sufficiently strong source found for this claim.",
+    "no_strong_sources_found": "No sufficiently solid source found for this claim.",
     "no_corroboration_found": "No usable corroboration found.",
     "corroborated": "Corroborated",
     "mixed": "Mixed",
@@ -203,16 +203,16 @@ T = {
     "detected": "Detected",
     "not_detected": "Not detected",
     "ai_module": "AI module",
-    "ai_module_caption": "AI reviews the heuristic analysis and formulates a more synthetic critical reading.",
+    "ai_module_caption": "The AI re-reads the heuristic analysis and formulates a more synthetic critical reading.",
     "generate_ai_analysis": "✨ Generate AI analysis",
     "ai_unavailable": "AI module unavailable: missing OpenAI key or library not installed.",
     "ai_analysis_result": "AI analysis",
     "method": "Method",
     "original_formula": "Original formula",
-    "articulated_knowledge_density": "G: articulated knowledge density — sources, numbers, names, references, verifiable traces.",
+    "articulated_knowledge_density": "G: articulated knowledge density — sources, figures, names, references, verifiable traces.",
     "integration": "N: integration — context, nuance, reservations, argumentative coherence.",
-    "assertive_rigidity": "D: assertive rigidity — unsupported certainties, rhetorical escalation.",
-    "disclaimer": "This app replaces neither a journalist, nor a researcher, nor a clerk of reality. But it already removes a few masks from the text that parades.",
+    "assertive_rigidity": "D: assertive rigidity — unsupported certainties, rhetorical overdrive.",
+    "disclaimer": "This app replaces neither a journalist, nor a researcher, nor a clerk of reality. But it already removes a few masks from the text that struts about.",
 }
 
 
@@ -256,7 +256,7 @@ def plot_cognitive_triangle_3d(G: float, N: float, D: float):
     ax.set_ylim(0, 10)
     ax.set_zlim(0, 10)
 
-    ax.set_xlabel("G — gnosis")
+    ax.set_xlabel("G — gnōsis")
     ax.set_ylabel("N — nous")
     ax.set_zlabel("D — doxa")
     ax.set_title("3D cognitive triangle")
@@ -309,11 +309,11 @@ with st.container(border=True):
 
     with col3:
         st.markdown("### 3️⃣ Understand")
-        st.write("Get a credibility score and an analysis of the claims.")
+        st.write("Get a credibility score and a claim analysis.")
 
     st.caption(
-        "This tool does not declare whether a text is true or false: "
-        "it simply helps better understand the solidity of the information."
+        "This tool does not claim whether a text is true or false: "
+        "it simply helps clarify how solid the information is."
     )
 
 
@@ -355,10 +355,10 @@ class Cognition:
 # Example
 # -----------------------------
 SAMPLE_ARTICLE = (
-    "Artificial intelligence will replace 80% of jobs by 2030, according to a shock study published yesterday by the firm GlobalTech. "
-    "The 45-page report states that the finance and healthcare sectors will be the most affected. "
+    "Artificial intelligence will replace 80% of jobs by 2030, according to a shocking study published yesterday by the firm GlobalTech. "
+    "The 45-page report states that the finance and healthcare sectors will be the hardest hit. "
     "\"This is an unprecedented revolution,\" says Jean Dupont, a robotics expert. "
-    "However, some economists such as Marie Curie remain cautious: \"These figures must be qualified, because new professions will emerge.\" "
+    "However, some economists such as Marie Curie remain cautious: \"These figures need to be qualified, because new jobs will appear.\" "
     "The study specifies that 12 million jobs could be created in Europe. "
     "Despite this, concern is growing among workers who fear for their future. "
     "It is absolutely certain that we are heading toward a major social crisis if nothing is done immediately."
@@ -398,7 +398,7 @@ def search_articles_by_keyword(keyword: str, max_results: int = 10) -> List[Dict
         url = "https://newsapi.org/v2/everything"
         params = {
             "q": keyword,
-            "language": "en",
+            "language": "fr",
             "sortBy": "publishedAt",
             "pageSize": max_results * 3,
             "apiKey": api_key,
@@ -439,7 +439,7 @@ def search_articles_by_keyword(keyword: str, max_results: int = 10) -> List[Dict
     # -----------------------------
     try:
         with DDGS() as ddgs:
-            query = f"{keyword} news"
+            query = f"{keyword} news France"
             results = list(ddgs.text(query, max_results=max_results * 5))
 
             for r in results:
@@ -467,87 +467,45 @@ def search_articles_by_keyword(keyword: str, max_results: int = 10) -> List[Dict
     return articles
 
 
-    api_key = st.secrets.get("NEWS_API_KEY")
+# -----------------------------
+# Mécroyance / lie gauge
+# -----------------------------
+def compute_lie_gauge(G: float, N: float, D: float, M: float):
 
-    if api_key:
-        url = "https://newsapi.org/v2/everything"
-        params = {
-            "q": keyword,
-            "language": "en",
-            "sortBy": "relevancy",
-            "pageSize": max_results * 2,
-            "apiKey": api_key,
-        }
+    ME_gauge = (2 * D) - (G + N)
+    delta = ME_gauge - M
 
-        try:
-            response = requests.get(url, params=params, timeout=10)
-            if response.status_code == 200:
-                data = response.json()
-                for art in data.get("articles", []):
-                    article_url = art.get("url")
-                    title = art.get("title")
-                    source = art.get("source", {}).get("name", "Unknown source")
+    # controlled amplification
+    amp = 8.0
 
-                    if not article_url or article_url in seen_urls:
-                        continue
+    strength = min(abs(delta) / amp, 1.0)
 
-                    seen_urls.add(article_url)
-                    articles.append({
-                        "title": title,
-                        "url": article_url,
-                        "source": source,
-                    })
+    if delta <= 0:
+        # mécroyance zone
+        gauge = 0.5 * (1 - strength)
 
-                    if len(articles) >= max_results:
-                        return articles
-            else:
-                st.warning(f"NewsAPI HTTP error: {response.status_code}")
-        except Exception as e:
-            st.warning(f"NewsAPI error: {e}")
+        if gauge > 0.35:
+            label = "Moderate mécroyance"
+            color = "#ca8a04"
+        else:
+            label = "Strong mécroyance"
+            color = "#a16207"
 
-    trusted_domains = [
-        "lemonde.fr", "lefigaro.fr", "liberation.fr", "francetvinfo.fr",
-        "lexpress.fr", "lepoint.fr", "nouvelobs.com", "la-croix.com",
-        "lesechos.fr", "latribune.fr", "mediapart.fr", "arte.tv",
-        "bbc.com", "reuters.com", "apnews.com", "nytimes.com",
-        "theguardian.com", "bloomberg.com", "dw.com", "aljazeera.com",
-        "nature.com", "science.org", "who.int", "un.org", "worldbank.org",
-        "elpais.com", "elmundo.es", "corriere.it", "spiegel.de", "zeit.de",
-    ]
+    else:
+        # lie zone
+        gauge = 0.5 + (0.5 * strength)
 
-    results: List[Dict] = []
+        if gauge < 0.65:
+            label = "Possible lie"
+            color = "#f97316"
+        elif gauge < 0.85:
+            label = "Probable lie"
+            color = "#dc2626"
+        else:
+            label = "Extreme lie"
+            color = "#991b1b"
 
-    try:
-        with DDGS() as ddgs:
-            query = f"{keyword} news article analysis study report"
-            ddg_results = list(ddgs.text(query, max_results=max_results * 5))
-
-            for r in ddg_results:
-                url = r.get("href", "")
-                title = r.get("title", "Untitled")
-
-                if not url or url in seen_urls:
-                    continue
-
-                if not any(domain in url for domain in trusted_domains):
-                    continue
-
-                seen_urls.add(url)
-                results.append(
-                    {
-                        "title": title,
-                        "url": url,
-                        "source": url.split("/")[2] if "://" in url else url,
-                    }
-                )
-
-                if len(results) >= max_results:
-                    break
-
-    except Exception as e:
-        st.warning(f"Search error: {e}")
-
-    return results
+    return round(gauge, 3), label, color, round(ME_gauge, 2)
 
 
 @dataclass
@@ -570,8 +528,8 @@ SOURCE_CUES = [
 ]
 
 ABSOLUTIST_WORDS = [
-    "always", "never", "absolutely", "certain", "proved", "proven",
-    "undeniable", "all", "none",
+    "always", "never", "absolutely", "certain", "proof",
+    "proven", "undeniable", "all", "none",
 ]
 
 EMOTIONAL_WORDS = [
@@ -580,7 +538,7 @@ EMOTIONAL_WORDS = [
 ]
 
 NUANCE_MARKERS = [
-    "however", "yet", "nevertheless", "nonetheless", "but",
+    "however", "yet", "nevertheless", "still", "but",
     "qualify", "caution", "possible", "perhaps", "seems",
 ]
 
@@ -636,7 +594,7 @@ def analyze_article(text: str) -> Dict:
     G = clamp(source_markers * 1.5 + citation_like * 0.5, 0, 10)
     N = clamp(nuance_markers * 2 + (article_length / 100), 0, 10)
 
-    certainty = len(re.findall(r"certain|absolutely|proved|obvious|undeniable", text.lower()))
+    certainty = len(re.findall(r"certain|absolutely|proven|evident|undeniable", text.lower()))
     emotional = len(re.findall(r"|".join(re.escape(w) for w in EMOTIONAL_WORDS), text.lower()))
 
     D = clamp(certainty * 2 + emotional * 1.5, 0, 10)
@@ -802,10 +760,10 @@ def extract_claim_features(claim: str) -> Dict:
     proper_names = re.findall(r"[A-Z][a-z]+(?:\s+[A-Z][a-z]+)+|[A-Z]{2,}", claim)
     words = re.findall(r"\b\w+\b", claim.lower())
     stopwords = {
-        "the", "and", "with", "from", "into", "that", "this", "those", "these",
-        "have", "will", "would", "could", "should", "they", "them", "their",
-        "about", "there", "which", "while", "where", "when", "what", "than",
-        "more", "less", "such", "been", "were", "your", "ours", "ourselves",
+        "the", "and", "with", "from", "that", "this", "those", "these",
+        "into", "over", "under", "have", "has", "had", "were", "was",
+        "are", "for", "but", "not", "you", "your", "our", "their",
+        "his", "her", "its", "who", "what", "when", "then", "thus",
     }
     keywords = [w for w in words if len(w) > 4 and w not in stopwords]
     return {
@@ -947,20 +905,20 @@ def generate_ai_summary(article_text: str, result: Dict, max_chars: int = 7000) 
         )
 
     prompt = f"""
-You are a rigorous critical-reading assistant.
+You are a rigorous critical reading assistant.
 
 Your task:
 1. Summarize the overall credibility profile of the text.
 2. Explain the difference between structural plausibility and factual robustness.
 3. Identify the 3 main strengths.
 4. Identify the 3 main weaknesses.
-5. End with a prudent verdict.
+5. End with a cautious verdict.
 
 Constraints:
 - Be clear, concise, and concrete.
-- Do not invent facts.
-- Do not claim with certainty that a text is true or false without solid justification.
-- Base yourself on the heuristic metrics below.
+- Do not invent any facts.
+- Do not claim with certainty that a text is true or false without strong justification.
+- Rely on the heuristic metrics below.
 
 Heuristic analysis:
 {json.dumps({
@@ -1093,7 +1051,7 @@ if st.session_state.get("multi_results"):
                         st.success("Article loaded into the text area.")
                         st.rerun()
                     else:
-                        st.warning("Unable to extract text.")
+                        st.warning("Unable to extract the text.")
 elif st.session_state.get("last_keyword"):
     st.warning(T["no_exploitable_articles_found"])
 
@@ -1197,7 +1155,7 @@ if result:
     st.subheader(f"{couleur} {T['credibility_gauge']} : {etiquette}")
     st.progress(score / 20)
     st.caption(f"{T['score']} : {score}/20 — {message}")
-    st.caption("On this scale, a truly credible text generally falls within the robust zone.")
+    st.caption("On this scale, a truly credible text generally belongs in the robust zone.")
 
     st.subheader("Cognitive diagnosis")
     life_score = round((result["hard_fact_score"] / 20) * 100, 1)
@@ -1217,7 +1175,7 @@ if result:
     st.subheader(T["summary"])
 
     m1, m2 = st.columns(2)
-    m1.metric("G — gnosis", result["G"])
+    m1.metric("G — gnōsis", result["G"])
     m2.metric("N — nous", result["N"])
     m3, m4 = st.columns(2)
     m3.metric("D — doxa", result["D"])
@@ -1231,7 +1189,7 @@ if result:
 
     st.divider()
     st.subheader("G-N-D cognitive triangle")
-    st.caption("The text is placed within the space of cognition: articulated knowledge, integrated understanding, and assertive certainty.")
+    st.caption("The text is placed in the space of cognition: articulated knowledge, integrated understanding, and assertive certainty.")
     fig_triangle = plot_cognitive_triangle_3d(result["G"], result["N"], result["D"])
     st.pyplot(fig_triangle, use_container_width=True)
 
@@ -1277,16 +1235,42 @@ if result:
     st.subheader("Cognitive diagnosis")
     st.write(diagnosis)
 
-    conflict = abs(result["M"] - result["ME"])
-    conflict_bar = min(conflict / 10, 1)
+    gauge_value, gauge_label, gauge_color, ME_gauge = compute_lie_gauge(
+        result["G"], result["N"], result["D"], result["M"]
+    )
 
     st.write("Cognitive tension (mécroyance vs lying)")
     st.caption(
-        "This bar indicates whether the discourse resembles a sincere error "
-        "(mécroyance) or possible manipulation. "
-        "The higher the bar, the more marked the gap between sincere error and probable lying."
+        "This gauge indicates whether the discourse looks more like a sincere error "
+        "(mécroyance) or a possible manipulation. "
+        "The further the gauge progresses, the closer the structure gets to lying."
     )
-    st.progress(conflict_bar)
+
+    st.markdown(f"""
+    <div style="width:100%; margin-top:10px; margin-bottom:10px;">
+        <div style="
+            width:100%;
+            height:26px;
+            background:#e5e7eb;
+            border-radius:12px;
+            overflow:hidden;
+            border:1px solid #cbd5e1;
+        ">
+            <div style="
+                width:{gauge_value*100}%;
+                height:100%;
+                background:{gauge_color};
+                transition:width 0.4s ease;
+            "></div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown(
+        f"<b style='color:{gauge_color}'>{gauge_label}</b> — {round(gauge_value*100,1)}%",
+        unsafe_allow_html=True
+    )
+
     st.caption("Sincere error ⟵⟶ Probable manipulation")
 
     with st.expander(T["strengths_detected"], expanded=True):
@@ -1412,10 +1396,10 @@ st.divider()
 st.subheader("Interactive mécroyance laboratory")
 st.caption(
     "Experiment with the cognitive formula: M = (G + N) − D. "
-    "Adjust the parameters to observe the evolution of cognitive stages."
+    "Adjust the parameters to observe how cognitive stages evolve."
 )
 
-g_game = st.slider("G — gnosis (articulated knowledge)", 0.0, 10.0, 5.0, 0.5)
+g_game = st.slider("G — gnōsis (articulated knowledge)", 0.0, 10.0, 5.0, 0.5)
 n_game = st.slider("N — nous (lived integration)", 0.0, 10.0, 5.0, 0.5)
 d_game = st.slider("D — doxa (certainty / saturation)", 0.0, 10.0, 5.0, 0.5)
 
@@ -1446,7 +1430,7 @@ if m_game < 0:
     percent = 10
 elif m_game <= 4:
     stage = "Cognitive childhood"
-    explanation = "Emerging cognitive structure, still fragile."
+    explanation = "An emerging cognitive structure, still fragile."
     percent = 25
 elif m_game <= 10:
     stage = "Cognitive adolescence"
@@ -1458,7 +1442,7 @@ elif m_game <= 17:
     percent = 75
 elif m_game < 19:
     stage = "Structural wisdom"
-    explanation = "Rare state of cognitive balance."
+    explanation = "A rare state of cognitive balance."
     percent = 90
 else:
     stage = "Asymptote of truth"
